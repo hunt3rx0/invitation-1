@@ -574,71 +574,74 @@ footer .heart {
 .footer-names-en,
 .message-en,
 .parents-en {
-  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   color: var(--muted);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
 .cover-names-en {
-  font-size: 0.95rem;
-  margin-top: 6px;
-  opacity: 0.9;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  opacity: 0.95;
+  font-weight: 500;
 }
 
 .cover-date-en {
-  font-size: 0.88rem;
-  margin-top: 4px;
-  opacity: 0.85;
-}
-
-.hero-label-en {
-  font-size: 0.9rem;
-  margin-top: -8px;
-  margin-bottom: 14px;
-  opacity: 0.85;
-}
-
-.hero-names-en {
-  font-size: 1.05rem;
+  font-size: 1rem;
   margin-top: 6px;
-  margin-bottom: 4px;
   opacity: 0.9;
 }
 
+.hero-label-en {
+  font-size: 1.05rem;
+  margin-top: -6px;
+  margin-bottom: 14px;
+  opacity: 0.9;
+}
+
+.hero-names-en {
+  font-size: 1.2rem;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
 .hero-date-en {
-  font-size: 0.9rem;
-  margin-top: 4px;
-  opacity: 0.85;
+  font-size: 1.05rem;
+  margin-top: 6px;
+  opacity: 0.9;
 }
 
 .section-title-en {
   text-align: center;
-  font-size: 0.85rem;
-  margin-top: -4px;
-  margin-bottom: 8px;
-  opacity: 0.8;
+  font-size: 1rem;
+  margin-top: -2px;
+  margin-bottom: 10px;
+  opacity: 0.85;
 }
 
 .detail-value-en {
-  font-size: 0.88rem;
-  margin-top: 2px;
-  opacity: 0.85;
-  line-height: 1.4;
+  font-size: 1rem;
+  margin-top: 3px;
+  opacity: 0.9;
+  line-height: 1.45;
 }
 
 .footer-names-en {
-  font-size: 0.95rem;
-  margin-top: 4px;
+  font-size: 1.1rem;
+  margin-top: 6px;
   margin-bottom: 6px;
-  opacity: 0.9;
+  opacity: 0.95;
+  font-weight: 500;
 }
 
 .message-en {
-  font-size: 0.95rem;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.75;
   margin-top: 12px;
   text-align: center;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .parents-km {
@@ -652,9 +655,9 @@ footer .heart {
 .parents-en {
   text-align: center;
   margin-top: 8px;
-  font-size: 0.88rem;
-  line-height: 1.65;
-  opacity: 0.85;
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
 }
 
 .message-divider {
