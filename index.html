@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#1a1208" />
+  <meta name="description" content="សិរីមង្គលពិធីភ្ជាប់ពាក្យ · ផង់ ពុទ្ធរតនៈ & ប៉ូ ច័ន្ទរស្មី · ១៨ ធ្នូ ២០២៦" />
+  <title>សិរីមង្គលពិធីភ្ជាប់ពាក្យ · Phang Putratanak & Po Chanrasmey</title>
+  
+  <!-- Khmer + elegant fonts for better consistency & readability -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Hanuman:wght@400;700&family=Koulen&family=Moul&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-ornament"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- Cover -->
+  <div id="cover">
+    <div class="cover-frame">
+      <!-- Selected flower corner ornaments (golden) -->
+      <svg class="cover-ornament top-left" viewBox="0 0 80 80" fill="none">
+        <path d="M8 72 Q8 8 72 8" stroke="#e8c547" stroke-width="1.6" opacity="0.6"/>
+        <g transform="translate(6,6) scale(0.42)">
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(90 50 50)"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(180 50 50)"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(270 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(90 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(180 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(270 50 50)"/>
+          <circle cx="50" cy="50" r="13" fill="#e8c547"/>
+          <circle cx="50" cy="50" r="8" fill="#1a1208"/>
+          <circle cx="50" cy="50" r="4.5" fill="#f5e6a8"/>
+        </g>
+      </svg>
+      <svg class="cover-ornament top-right" viewBox="0 0 80 80" fill="none">
+        <path d="M8 72 Q8 8 72 8" stroke="#e8c547" stroke-width="1.6" opacity="0.6"/>
+        <g transform="translate(6,6) scale(0.42)">
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(90 50 50)"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(180 50 50)"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(270 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(90 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(180 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(270 50 50)"/>
+          <circle cx="50" cy="50" r="13" fill="#e8c547"/>
+          <circle cx="50" cy="50" r="8" fill="#1a1208"/>
+          <circle cx="50" cy="50" r="4.5" fill="#f5e6a8"/>
+        </g>
+      </svg>
+      <svg class="cover-ornament bot-left" viewBox="0 0 80 80" fill="none">
+        <path d="M8 72 Q8 8 72 8" stroke="#e8c547" stroke-width="1.6" opacity="0.6"/>
+        <g transform="translate(6,6) scale(0.42)">
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(90 50 50)"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(180 50 50)"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(270 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(90 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(180 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(270 50 50)"/>
+          <circle cx="50" cy="50" r="13" fill="#e8c547"/>
+          <circle cx="50" cy="50" r="8" fill="#1a1208"/>
+          <circle cx="50" cy="50" r="4.5" fill="#f5e6a8"/>
+        </g>
+      </svg>
+      <svg class="cover-ornament bot-right" viewBox="0 0 80 80" fill="none">
+        <path d="M8 72 Q8 8 72 8" stroke="#e8c547" stroke-width="1.6" opacity="0.6"/>
+        <g transform="translate(6,6) scale(0.42)">
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(90 50 50)"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(180 50 50)"/>
+          <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(270 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(90 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(180 50 50)"/>
+          <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(270 50 50)"/>
+          <circle cx="50" cy="50" r="13" fill="#e8c547"/>
+          <circle cx="50" cy="50" r="8" fill="#1a1208"/>
+          <circle cx="50" cy="50" r="4.5" fill="#f5e6a8"/>
+        </g>
+      </svg>
+
+      <div class="cover-label">សិរីមង្គលពិធីភ្ជាប់ពាក្យ</div>
+      <div class="cover-names">
+        <span class="name">ផង់ ពុទ្ធរតនៈ</span>
+        <span class="cover-and">និង</span>
+        <span class="name">ប៉ូ ច័ន្ទរស្មី</span>
+      </div>
+      <div class="cover-names-en">Phang Putratanak &amp; Po Chanrasmey</div>
+      <div class="cover-divider">
+        <svg class="romduol" viewBox="0 0 100 100" fill="none">
+            <!-- Exact style of the selected 4-petal diamond flower (golden) -->
+            <!-- Top petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z"/>
+            <!-- Right petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(90 50 50)"/>
+            <!-- Bottom petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(180 50 50)"/>
+            <!-- Left petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(270 50 50)"/>
+            <!-- Inner petal cutouts (lighter gold to create the layered look of the reference) -->
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(90 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(180 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(270 50 50)"/>
+            <!-- Center rings exactly like the reference -->
+            <circle cx="50" cy="50" r="14" fill="#e8c547"/>
+            <circle cx="50" cy="50" r="9" fill="#1a1208"/>
+            <circle cx="50" cy="50" r="5" fill="#f5e6a8"/>
+          </svg>
+      </div>
+      <div class="cover-date">ថ្ងៃសុក្រ ទី១៨ ខែធ្នូ ឆ្នាំ២០២៦</div>
+      <div class="cover-date-en">Friday, 18 December 2026</div>
+      <button class="enter-btn" id="enterBtn">ចូលទៅកាន់ពិធី</button>
+    </div>
+  </div>
+
+  <main id="mainContent" style="display:none;">
+    <!-- Hero -->
+    <section class="hero fade-up">
+      <div class="hero-label">សិរីមង្គលពិធីភ្ជាប់ពាក្យ</div>
+      <div class="hero-label-en">Engagement Ceremony</div>
+      <div class="hero-names">
+        <span class="name">ផង់ ពុទ្ធរតនៈ</span>
+        <span class="hero-and">និង</span>
+        <span class="name">ប៉ូ ច័ន្ទរស្មី</span>
+      </div>
+      <div class="hero-names-en">Phang Putratanak &amp; Po Chanrasmey</div>
+      <div class="hero-date">ថ្ងៃសុក្រ · ទី១៨ ធ្នូ ២០២៦</div>
+      <div class="hero-date-en">Friday · 18 December 2026</div>
+    </section>
+
+    <!-- Countdown -->
+    <section class="fade-up">
+      <div class="card">
+        <div class="section-title">រាប់ថយក្រោយ</div>
+        <div class="section-title-en">Countdown</div>
+        <div class="deco-line">
+          <svg class="romduol" viewBox="0 0 100 100" fill="none">
+            <!-- Exact style of the selected 4-petal diamond flower (golden) -->
+            <!-- Top petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z"/>
+            <!-- Right petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(90 50 50)"/>
+            <!-- Bottom petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(180 50 50)"/>
+            <!-- Left petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(270 50 50)"/>
+            <!-- Inner petal cutouts (lighter gold to create the layered look of the reference) -->
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(90 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(180 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(270 50 50)"/>
+            <!-- Center rings exactly like the reference -->
+            <circle cx="50" cy="50" r="14" fill="#e8c547"/>
+            <circle cx="50" cy="50" r="9" fill="#1a1208"/>
+            <circle cx="50" cy="50" r="5" fill="#f5e6a8"/>
+          </svg>
+        </div>
+        <div class="countdown" id="countdown">
+          <div class="count-box">
+            <div class="count-num" id="days">00</div>
+            <div class="count-label">ថ្ងៃ</div>
+          </div>
+          <div class="count-box">
+            <div class="count-num" id="hours">00</div>
+            <div class="count-label">ម៉ោង</div>
+          </div>
+          <div class="count-box">
+            <div class="count-num" id="mins">00</div>
+            <div class="count-label">នាទី</div>
+          </div>
+          <div class="count-box">
+            <div class="count-num" id="secs">00</div>
+            <div class="count-label">វិនាទី</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="fade-up">
+      <div class="card">
+        <div class="section-title">ព័ត៌មានពិធី</div>
+        <div class="section-title-en">Event Details</div>
+        <div class="deco-line">
+          <svg class="romduol" viewBox="0 0 100 100" fill="none">
+            <!-- Exact style of the selected 4-petal diamond flower (golden) -->
+            <!-- Top petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z"/>
+            <!-- Right petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(90 50 50)"/>
+            <!-- Bottom petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(180 50 50)"/>
+            <!-- Left petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(270 50 50)"/>
+            <!-- Inner petal cutouts (lighter gold to create the layered look of the reference) -->
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(90 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(180 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(270 50 50)"/>
+            <!-- Center rings exactly like the reference -->
+            <circle cx="50" cy="50" r="14" fill="#e8c547"/>
+            <circle cx="50" cy="50" r="9" fill="#1a1208"/>
+            <circle cx="50" cy="50" r="5" fill="#f5e6a8"/>
+          </svg>
+        </div>
+        <div class="detail-grid">
+          <div class="detail-item">
+            <div class="detail-icon">📅</div>
+            <div>
+              <div class="detail-label">ថ្ងៃ</div>
+              <div class="detail-value">ថ្ងៃសុក្រ ទី១៨ ខែធ្នូ ឆ្នាំ២០២៦</div>
+              <div class="detail-value-en">Friday, 18 December 2026</div>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">🕔</div>
+            <div>
+              <div class="detail-label">ម៉ោង</div>
+              <div class="detail-value">៨:៣០ នាទីព្រឹក</div>
+              <div class="detail-value-en">8:30 AM</div>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">📍</div>
+            <div>
+              <div class="detail-label">ទីកន្លែង</div>
+              <div class="detail-value">ភោជនីយដ្ឋាន ព្រីមរៀរសែនសុខ ផាលេស</div>
+              <div class="detail-value-en">The Premier Sensok Palace Restaurant</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendar -->
+    <section class="fade-up">
+      <div class="card">
+        <div class="section-title">ប្រតិទិន</div>
+        <div class="section-title-en">Calendar</div>
+        <div class="deco-line">
+          <svg class="romduol" viewBox="0 0 100 100" fill="none">
+            <!-- Exact style of the selected 4-petal diamond flower (golden) -->
+            <!-- Top petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z"/>
+            <!-- Right petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(90 50 50)"/>
+            <!-- Bottom petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(180 50 50)"/>
+            <!-- Left petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(270 50 50)"/>
+            <!-- Inner petal cutouts (lighter gold to create the layered look of the reference) -->
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(90 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(180 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(270 50 50)"/>
+            <!-- Center rings exactly like the reference -->
+            <circle cx="50" cy="50" r="14" fill="#e8c547"/>
+            <circle cx="50" cy="50" r="9" fill="#1a1208"/>
+            <circle cx="50" cy="50" r="5" fill="#f5e6a8"/>
+          </svg>
+        </div>
+        <div class="calendar">
+          <div class="cal-header">ធ្នូ ២០២៦ · December 2026</div>
+          <div class="cal-grid">
+            <div class="cal-day-name">អា</div>
+            <div class="cal-day-name">ច</div>
+            <div class="cal-day-name">អ</div>
+            <div class="cal-day-name">ព</div>
+            <div class="cal-day-name">ព្រ</div>
+            <div class="cal-day-name">សុ</div>
+            <div class="cal-day-name">ស</div>
+            <!-- Dec 2026 starts on Tuesday -->
+            <div class="cal-day empty"></div>
+            <div class="cal-day empty"></div>
+            <div class="cal-day">1</div>
+            <div class="cal-day">2</div>
+            <div class="cal-day">3</div>
+            <div class="cal-day">4</div>
+            <div class="cal-day">5</div>
+            <div class="cal-day">6</div>
+            <div class="cal-day">7</div>
+            <div class="cal-day">8</div>
+            <div class="cal-day">9</div>
+            <div class="cal-day">10</div>
+            <div class="cal-day">11</div>
+            <div class="cal-day">12</div>
+            <div class="cal-day">13</div>
+            <div class="cal-day">14</div>
+            <div class="cal-day">15</div>
+            <div class="cal-day">16</div>
+            <div class="cal-day">17</div>
+            <div class="cal-day highlight">18</div>
+            <div class="cal-day">19</div>
+            <div class="cal-day">20</div>
+            <div class="cal-day">21</div>
+            <div class="cal-day">22</div>
+            <div class="cal-day">23</div>
+            <div class="cal-day">24</div>
+            <div class="cal-day">25</div>
+            <div class="cal-day">26</div>
+            <div class="cal-day">27</div>
+            <div class="cal-day">28</div>
+            <div class="cal-day">29</div>
+            <div class="cal-day">30</div>
+            <div class="cal-day">31</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message -->
+    <section class="fade-up">
+      <div class="card">
+        <div class="section-title">សេចក្តីអញ្ជើញ</div>
+        <div class="section-title-en">Invitation</div>
+        <div class="deco-line">
+          <svg class="romduol" viewBox="0 0 100 100" fill="none">
+            <!-- Exact style of the selected 4-petal diamond flower (golden) -->
+            <!-- Top petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z"/>
+            <!-- Right petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(90 50 50)"/>
+            <!-- Bottom petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(180 50 50)"/>
+            <!-- Left petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(270 50 50)"/>
+            <!-- Inner petal cutouts (lighter gold to create the layered look of the reference) -->
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(90 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(180 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(270 50 50)"/>
+            <!-- Center rings exactly like the reference -->
+            <circle cx="50" cy="50" r="14" fill="#e8c547"/>
+            <circle cx="50" cy="50" r="9" fill="#1a1208"/>
+            <circle cx="50" cy="50" r="5" fill="#f5e6a8"/>
+          </svg>
+        </div>
+        <div class="message-text">
+          <p>សូមគោរពអញ្ជើញ ឯកឧត្តម ឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និងប្រិយមិត្តអញ្ជើញ ចូលរួមជាអធិបតី ជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្តីជ័យមង្គល ក្នុងពិធីភ្ជាប់ពាក្យ កូនប្រុស កូនស្រីរបស់យើងខ្ញុំ។</p>
+          <p class="parents-km">លោក ផង់ ប៉ូលីណា &amp; លោកស្រី ហេង សុជាតិ<br>លោក ប៉ូ រិទ្ធី &amp; លោកស្រី ហាក់ ទីឡែន</p>
+          <div class="message-divider"></div>
+          <p class="message-en">We respectfully request the joy of your presence at the celebration of our engagement ceremony.</p>
+          <p class="parents-en">Mr. Phang Polyna &amp; Mrs. Heng Socheat<br>Mr. Po Rithy &amp; Mrs. Hak Tilen</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Venue -->
+    <section class="fade-up">
+      <div class="card">
+        <div class="section-title">ទីកន្លែង</div>
+        <div class="section-title-en">Venue</div>
+        <div class="deco-line">
+          <svg class="romduol" viewBox="0 0 100 100" fill="none">
+            <!-- Exact style of the selected 4-petal diamond flower (golden) -->
+            <!-- Top petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z"/>
+            <!-- Right petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(90 50 50)"/>
+            <!-- Bottom petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(180 50 50)"/>
+            <!-- Left petal -->
+            <path fill="#e8c547" d="M50 8 C53 22 62 30 74 34 C62 38 53 46 50 60 C47 46 38 38 26 34 C38 30 47 22 50 8 Z" transform="rotate(270 50 50)"/>
+            <!-- Inner petal cutouts (lighter gold to create the layered look of the reference) -->
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(90 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(180 50 50)"/>
+            <path fill="#f5e6a8" d="M50 18 C52 28 58 33 67 36 C58 39 52 44 50 54 C48 44 42 39 33 36 C42 33 48 28 50 18 Z" transform="rotate(270 50 50)"/>
+            <!-- Center rings exactly like the reference -->
+            <circle cx="50" cy="50" r="14" fill="#e8c547"/>
+            <circle cx="50" cy="50" r="9" fill="#1a1208"/>
+            <circle cx="50" cy="50" r="5" fill="#f5e6a8"/>
+          </svg>
+        </div>
+        <div class="detail-value" style="text-align:center; margin-bottom:4px;">ភោជនីយដ្ឋាន ព្រីមរៀរសែនសុខ ផាលេស</div>
+        <div class="detail-value-en" style="text-align:center; margin-bottom:8px;">The Premier Sensok Palace Restaurant</div>
+        <div class="map-placeholder">
+          <span style="font-size:1.8rem;">🗺️</span>
+          <span>ផែនទីទីកន្លែង · Map</span>
+          <a href="https://maps.google.com/?q=The+Premier+Sensok+Palace+Restaurant+Phnom+Penh" target="_blank" rel="noopener">បើកក្នុង Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="fade-up">
+      <div class="footer-names">ផង់ ពុទ្ធរតនៈ &amp; ប៉ូ ច័ន្ទរស្មី</div>
+      <div class="footer-names-en">Phang Putratanak &amp; Po Chanrasmey</div>
+      <div>ថ្ងៃទី១៨ ខែធ្នូ ឆ្នាំ២០២៦ · 18 December 2026</div>
+      <div style="margin-top:20px; opacity:0.7;">Made with <span class="heart">♥</span> · Digital Engagement Invitation</div>
+    </footer>
+  </main>
+
+  <script>
+    // Particles
+    const particlesEl = document.getElementById('particles');
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left = Math.random() * 100 + '%';
+      p.style.width = p.style.height = (3 + Math.random() * 5) + 'px';
+      p.style.animationDuration = (12 + Math.random() * 18) + 's';
+      p.style.animationDelay = (Math.random() * 12) + 's';
+      p.style.opacity = 0.15 + Math.random() * 0.25;
+      particlesEl.appendChild(p);
+    }
+
+    // Enter cover
+    const cover = document.getElementById('cover');
+    const main = document.getElementById('mainContent');
+    document.getElementById('enterBtn').addEventListener('click', () => {
+      cover.classList.add('hide');
+      main.style.display = 'block';
+      // Trigger fade-ups
+      setTimeout(() => {
+        document.querySelectorAll('.fade-up').forEach((el, i) => {
+          setTimeout(() => el.classList.add('visible'), i * 120);
+        });
+      }, 200);
+    });
+
+    // Countdown
+    const target = new Date('2026-12-18T08:30:00+07:00').getTime();
+    function updateCountdown() {
+      const now = Date.now();
+      let diff = Math.max(0, target - now);
+      const d = Math.floor(diff / 86400000);
+      diff %= 86400000;
+      const h = Math.floor(diff / 3600000);
+      diff %= 3600000;
+      const m = Math.floor(diff / 60000);
+      diff %= 60000;
+      const s = Math.floor(diff / 1000);
+      document.getElementById('days').textContent = String(d).padStart(2, '0');
+      document.getElementById('hours').textContent = String(h).padStart(2, '0');
+      document.getElementById('mins').textContent = String(m).padStart(2, '0');
+      document.getElementById('secs').textContent = String(s).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Intersection observer for fade-ups (in case)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
