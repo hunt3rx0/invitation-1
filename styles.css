@@ -1010,11 +1010,11 @@ body {
 }
 /* Groom's parents — LEFT column */
 .message-text .parents-grid .parent-family:first-child {
-  transform: translateX(10px);
+  transform: translateX(50px);
 }
 /* Bride's parents — RIGHT column */
 .message-text .parents-grid .parent-family:last-child {
-  transform: translateX(10px);
+  transform: translateX(50px);
 }
 .message-text .parents-grid.parents-km {
   font-family: 'Preahvihear', 'Hanuman', sans-serif;
