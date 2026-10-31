@@ -1010,11 +1010,11 @@ body {
 }
 /* Groom's parents — LEFT column */
 .message-text .parents-grid .parent-family:first-child {
-  transform: translateX(60px);
+  transform: translateX(10px);
 }
 /* Bride's parents — RIGHT column */
 .message-text .parents-grid .parent-family:last-child {
-  transform: translateX(60px);
+  transform: translateX(10px);
 }
 .message-text .parents-grid.parents-km {
   font-family: 'Preahvihear', 'Hanuman', sans-serif;
@@ -1051,5 +1051,29 @@ body {
   .message-text .parents-grid.parents-en {
     font-size: clamp(10px, 2.5vw, 12px);
     line-height: 1.6;
+  }
+}
+
+/* Couple names: readable on phones without horizontal clipping */
+@media (max-width: 600px) {
+  .hero .hero-names {
+    font-size: clamp(1.08rem, 4.7vw, 1.35rem);
+    line-height: 1.9;
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    padding-inline: 8px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .hero .hero-names-en {
+    font-size: clamp(0.9rem, 3.7vw, 1.08rem);
+    line-height: 1.7;
+    letter-spacing: 0;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    padding-inline: 8px;
+    box-sizing: border-box;
+    text-align: center;
   }
 }
