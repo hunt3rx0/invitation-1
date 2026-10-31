@@ -734,3 +734,322 @@ body {
   .calendar-card .cal-day-name { font-size: .74rem; height: 27px; }
   .calendar-card .cal-day { font-size: .85rem; }
 }
+
+
+/* Make Khmer names more readable on mobile */
+@media screen and (max-width: 600px) {
+  .couple-names-kh {
+    font-family: 'Moulpali', 'Hanuman', sans-serif;
+    font-size: clamp(20px, 5vw, 26px);
+    line-height: 1.8;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+
+
+.family-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.family-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 48px;
+  row-gap: 28px;
+  align-items: center;
+  text-align: left;
+}
+
+.family-name {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.khmer-family {
+  font-family: 'Preahvihear', 'Hanuman', sans-serif;
+  font-size: clamp(19px, 2.5vw, 29px);
+  line-height: 1.9;
+  color: #fff0d1;
+}
+
+.english-family {
+  margin-top: 25px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(12px, 1.4vw, 17px);
+  line-height: 1.7;
+  color: #e5cfa7;
+}
+
+@media (max-width: 600px) {
+  .family-section {
+    padding: 0 12px;
+  }
+
+  .family-grid {
+    column-gap: 14px;
+    row-gap: 18px;
+  }
+
+  .khmer-family {
+    font-size: clamp(14px, 3.7vw, 19px);
+    line-height: 1.8;
+  }
+
+  .english-family {
+    font-size: 10px;
+    overflow-wrap: anywhere;
+  }
+}
+
+
+/* Parents layout: Groom family | Bride family */
+.message-text .parents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 36px;
+  row-gap: 16px;
+  width: 100%;
+  margin: 28px auto;
+  align-items: center;
+  text-align: left;
+}
+
+.message-text .parents-grid > div {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* Khmer parents */
+.message-text .parents-grid.parents-km {
+  font-family: 'Preahvihear', 'Hanuman', sans-serif;
+  font-size: clamp(18px, 2.2vw, 27px);
+  line-height: 1.8;
+  color: #fff0d1;
+}
+
+/* English parents */
+.message-text .parents-grid.parents-en {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(12px, 1.4vw, 17px);
+  line-height: 1.7;
+  color: #e5cfa7;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .message-text .parents-grid {
+    column-gap: 12px;
+    row-gap: 14px;
+    margin: 20px auto;
+  }
+
+  .message-text .parents-grid.parents-km {
+    font-size: clamp(14px, 3.5vw, 19px);
+    line-height: 1.7;
+  }
+
+  .message-text .parents-grid.parents-en {
+    font-size: clamp(10px, 2.5vw, 13px);
+    line-height: 1.6;
+  }
+}
+
+
+/* Invitation letter: balanced readable typography on desktop and phones */
+.message-text > p:first-child {
+  font-family: var(--font-kh-body);
+  font-size: clamp(0.82rem, 1.65vw, 0.96rem);
+  line-height: 1.95;
+  font-weight: 400;
+  max-width: 54ch;
+  margin-inline: auto;
+}
+.message-text .parents-grid {
+  column-gap: clamp(12px, 3vw, 28px);
+  row-gap: 10px;
+  margin: 22px auto;
+}
+.message-text .parents-grid.parents-km {
+  font-family: var(--font-kh-body);
+  font-size: clamp(0.84rem, 1.7vw, 1.05rem);
+  font-weight: 400;
+  line-height: 1.75;
+}
+.message-text .parents-grid.parents-en {
+  font-family: var(--font-en);
+  font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+  line-height: 1.7;
+  margin-top: 18px;
+}
+.message-text .message-en {
+  font-size: clamp(0.75rem, 1.3vw, 0.86rem) !important;
+  line-height: 1.75 !important;
+}
+@media (max-width: 600px) {
+  .message-text > p:first-child {
+    font-size: clamp(0.79rem, 3.2vw, 0.9rem);
+    line-height: 1.9;
+  }
+  .message-text .parents-grid {
+    column-gap: 10px;
+    row-gap: 9px;
+    margin: 18px auto;
+  }
+  .message-text .parents-grid.parents-km {
+    font-size: clamp(0.72rem, 3vw, 0.87rem);
+    line-height: 1.7;
+  }
+  .message-text .parents-grid.parents-en {
+    font-size: clamp(0.61rem, 2.35vw, 0.72rem);
+    line-height: 1.65;
+  }
+  .message-text .message-en {
+    font-size: 0.74rem !important;
+  }
+}
+
+/* Final override: grouped, centered parents with matched columns */
+.message-text .parents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(14px, 3vw, 36px);
+  row-gap: 0;
+  width: 100%;
+  align-items: start;
+  text-align: center;
+  margin: 22px auto;
+}
+.message-text .parents-grid .parent-family {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.message-text .parents-grid .parent-family > div {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+.message-text .parents-grid.parents-km {
+  font-family: var(--font-kh-body);
+  font-size: clamp(0.84rem, 1.7vw, 1.05rem);
+  line-height: 1.8;
+}
+.message-text .parents-grid.parents-en {
+  font-family: var(--font-en);
+  font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+  line-height: 1.7;
+}
+@media (max-width: 600px) {
+  .message-text .parents-grid { column-gap: 10px; margin: 18px auto; }
+  .message-text .parents-grid .parent-family { gap: 8px; }
+  .message-text .parents-grid.parents-km { font-size: clamp(0.72rem, 3vw, 0.87rem); }
+  .message-text .parents-grid.parents-en { font-size: clamp(0.61rem, 2.35vw, 0.72rem); }
+}
+
+/* Parent names: shared left edge for father and mother in each column */
+.message-text .parents-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(16px, 4vw, 48px);
+  text-align: left;
+  padding-inline: clamp(4px, 2vw, 20px);
+  box-sizing: border-box;
+}
+.message-text .parents-grid .parent-family {
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+}
+.message-text .parents-grid .parent-family > div {
+  width: 100%;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  .message-text .parents-grid {
+    column-gap: 12px;
+    padding-inline: 0;
+  }
+}
+
+
+/* =========================================
+   PARENTS NAMES — FINAL ADJUSTABLE LAYOUT
+   Change translateX() independently for each column.
+   Positive = right; negative = left.
+   ========================================= */
+.message-text .parents-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 16px;
+  width: 100%;
+  margin: 24px auto;
+  padding-inline: 0;
+  align-items: start;
+  text-align: left;
+}
+.message-text .parents-grid .parent-family {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  min-width: 0;
+  width: 100%;
+  text-align: left;
+}
+.message-text .parents-grid .parent-family > div {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+/* Groom's parents — LEFT column */
+.message-text .parents-grid .parent-family:first-child {
+  transform: translateX(60px);
+}
+/* Bride's parents — RIGHT column */
+.message-text .parents-grid .parent-family:last-child {
+  transform: translateX(60px);
+}
+.message-text .parents-grid.parents-km {
+  font-family: 'Preahvihear', 'Hanuman', sans-serif;
+  font-size: clamp(15px, 2vw, 21px);
+  font-weight: 400;
+  line-height: 1.8;
+  color: #fff0d1;
+}
+.message-text .parents-grid.parents-en {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(11px, 1.3vw, 15px);
+  font-weight: 400;
+  line-height: 1.7;
+  color: #e5cfa7;
+}
+@media (max-width: 600px) {
+  .message-text .parents-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 12px;
+    row-gap: 12px;
+    margin: 18px auto;
+  }
+  .message-text .parents-grid .parent-family { gap: 8px; }
+  .message-text .parents-grid .parent-family:first-child {
+    transform: translateX(4px);
+  }
+  .message-text .parents-grid .parent-family:last-child {
+    transform: translateX(4px);
+  }
+  .message-text .parents-grid.parents-km {
+    font-size: clamp(12px, 3.2vw, 16px);
+    line-height: 1.7;
+  }
+  .message-text .parents-grid.parents-en {
+    font-size: clamp(10px, 2.5vw, 12px);
+    line-height: 1.6;
+  }
+}
