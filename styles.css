@@ -1039,10 +1039,10 @@ body {
   }
   .message-text .parents-grid .parent-family { gap: 8px; }
   .message-text .parents-grid .parent-family:first-child {
-    transform: translateX(4px);
+    transform: translateX(20px);
   }
   .message-text .parents-grid .parent-family:last-child {
-    transform: translateX(4px);
+    transform: translateX(40px);
   }
   .message-text .parents-grid.parents-km {
     font-size: clamp(12px, 3.2vw, 16px);
