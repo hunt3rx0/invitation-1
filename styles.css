@@ -1077,3 +1077,72 @@ body {
     text-align: center;
   }
 }
+
+
+/* ====================================
+   FOOTER BRANDING
+   ==================================== */
+
+.footer-branding {
+  margin-top: 35px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.footer-divider {
+  color: #d6a34d;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.footer-tagline {
+  color: #f1d18c;
+  font-family: inherit;
+  font-size: clamp(12px, 2.5vw, 15px);
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.footer-designer {
+  color: #d8c19e;
+  font-family: inherit;
+  font-size: clamp(11px, 2vw, 13px);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Telegram link - same font and color */
+.footer-designer a,
+.footer-designer a:visited {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.footer-designer a:hover {
+  color: #f1d18c;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .footer-branding {
+    margin-top: 28px;
+    padding: 0 12px;
+  }
+
+  .footer-divider {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  .footer-tagline {
+    font-size: 12px;
+  }
+
+  .footer-designer {
+    font-size: 11px;
+  }
+}
